@@ -1,0 +1,35 @@
+#top{
+    background: $mainColor;
+    color: $fontWhite;
+    position: relative;
+    z-index: 100;
+    padding: 10px;
+    .container-fluid{
+        .row{
+            .topLeft{
+                span{
+                    font-weight: 500;
+                    margin: 0 10px;
+                    font-size: $topFontSize;
+                }
+                #menuBar{
+                    background: transparent;
+                    border-style: none;
+                    outline: none;
+                    padding: 5px 10px;
+                    transition: $mainTransition;
+                    border-radius: 50%;
+                    font-size: $topFontSize;
+                    color: darken($fontWhite,10%);
+                    margin: 0 10px;
+                    &:hover{
+                        color: $fontWhite;
+                    }
+                    &:focus{
+                        background: #000000;                  
+                    }
+                }
+            }
+        }
+    }
+}
